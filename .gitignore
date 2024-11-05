@@ -1,0 +1,7 @@
+# קבצים ותיקיות להתעלמות
+node_modules/
+bootstrap/
+dist/
+.DS_Store
+fontawesome/
+

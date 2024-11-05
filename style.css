@@ -1,0 +1,582 @@
+::selection {
+    color: white;
+    background: #e0a501;
+  }
+body {
+    display: grid;
+    grid-template-areas: "header""main""footer";
+    grid-template-rows: 150px auto auto;
+    font-family: EFT_Beigale Heavy;
+   background-color: #f1f1f1;
+   user-select: none;
+}
+#header {
+    grid-area: "header";
+    text-align: right;
+    color: aliceblue;
+    font-size: 50px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;    
+}
+/* ניווט */
+#nav {
+    background-color: black;
+    padding-top: 20px;
+    color: white;
+}
+/* עיצוב כללי לכפתורים */
+button {
+    cursor: pointer;
+    border-radius: 20%;
+    float: right;
+    width: 8%;
+    display: block;
+    color: #fcb900;
+    background-color: transparent;
+    text-align: center;
+    padding: 13px 15px;
+    font-family: EFT_Beigale Heavy;
+    font-size: 15px;
+    border: transparent;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+/* עיצוב לכפתורי העמודים */
+.pages {
+    background-color: black;
+    font-size: 2.5vh;
+    width: 10vw;
+}
+.pages:hover {
+    /* border-right: #fcb900 solid 7px; */
+    background-color: rgb(46, 41, 41);
+    border-radius: 0%;
+}
+/* עיצוב לכפתורי הוספה לסל */
+.btns {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.417);
+    border-radius: 0%;
+    color: aliceblue;
+}
+.btns:hover {
+    background-color: rgba(0, 0, 0, 0.657);
+}
+#main {
+    grid-area: "main";
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* margin-right: 230px; */
+}
+footer {
+    background-color: #000000;
+    grid-area: "footer";
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .site-info {
+    flex: 1 1 50%;
+  }
+  
+  .site-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffbb00;
+    margin-bottom: 10px;
+  }
+  
+  .site-info p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+  
+  .contact-info {
+    flex: 1 1 50%;
+  }
+  
+  .contact-info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+    color: #ffbb00;
+  }
+  
+  .footer-text {
+    color: rgb(146, 146, 146);
+    font-size: 20px;
+    margin-top: 20px;
+  }
+/* #footer {
+    grid-area: "footer";
+    display: grid;
+    padding: 50px;
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    
+} */
+/* עיצוב הבאנר בעמוד הבית */
+#banner{
+    text-align:center ;
+    padding:250px 0 ;
+    background-image: url(./pics/general/banner1.jpg);
+    background-size: cover;
+    color: #fff;
+    animation: 3s fade infinite;
+}
+/* תפריט המוצרים בעמוד הבית למטה */
+.menu{
+text-align: center;
+padding: 50px 0;
+}
+.menu h2{
+text-align: center;
+margin-bottom: 20px 0;
+}
+.menu .item{
+display: inline-block;
+margin: 20px;
+}
+.item:hover{
+    cursor: pointer;
+}
+.menu .item img{
+width: 200px;
+height: 200px;
+margin-bottom: 10px;
+animation: pulse 2s infinite;
+
+}
+/* עיצוב הנמכרים ביותר בעמוד הבית למטה */
+.specials{
+text-align: center;
+padding: 50px 0;
+}
+.specials h2{
+font-size: 30px;
+margin-bottom: 20px;
+}
+.specials .special h3{
+font-size: 24px;
+margin-bottom: 10px;
+}
+.specials .special{
+display: inline-block;
+width: 300px;
+margin: 20px;
+}
+.specials .special,p,a{
+    animation: slideInLeft 1s ease-in forwards;
+}
+/* עיצוב הדיבים שבתוכם מיוצר הדף הנוכחי */
+#meels,
+#desert,
+#drink,
+#salads,
+#noGluten,
+#find,
+#pasta {
+    grid-area: "pro";
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-radius: 10px;
+}
+/* עיצוב הסקרול של הגלילה */
+::-webkit-scrollbar {
+    width: 25px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 5px 5px 5px grey; 
+    border-radius: 5px;
+    background-color: rgb(180, 175, 175);
+    opacity: 0.5;
+  }
+   ::-webkit-scrollbar-thumb {
+    background: #5f5f5f; 
+    background-size: cover;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d1a018; 
+  }
+/* עיצוב כל מוצר בפני עצמו בעמודי המוצרים השונים */
+.generalProduct {
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.generalProduct:hover {
+    animation-name: zoom;
+    animation-duration: 0.3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+/* עיצוב עמוד סל הקניות */
+#cart {
+    font-size: 30px;
+    color: black;
+    width: 100%;
+    text-align: right;
+
+}
+/* עיצוב כלל המוצרים בעמוד הסל קניות */
+.cartProducts {
+    margin: 100px;
+    border-radius: 20px;
+    background-color: #faf5e8;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin-left: 48vw;
+}
+.cartProducts img{
+    animation: pulse 2s infinite;
+}
+/* עיצוב כפתור הוספה לסל */
+.addedToCart {
+    width: 100%;
+    border-radius: 0%;
+    color: aliceblue;
+    border: rgb(126, 125, 125) 7px double;
+    background-color: #fcb900b0;
+    transition: background-color .3s;
+    /* animation: infinite 2s new; */
+}
+.addedToCart:hover {
+    background-color: #fcb900;
+
+}
+/* עיצוב מיוחד למוצרים ללא גלוטן */
+#gluten{
+    background-image: url(./pics/general/gluten3.png);
+    background-position: 2px 6px;
+    background-repeat: no-repeat;
+}
+/* הפעלת אנימציה כללית לכל הכתוביות בעמוד */
+p{
+   animation:alli 2s; 
+}
+/* עיצוב כפתור החיפוש מוצר */
+#search {
+    background-image: url(./pics/general/searchicon.png);
+    background-position: 2px 6px;
+    background-repeat: no-repeat;
+    right: 10%;
+    float: right;
+    width: 11%;
+    text-align: right;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 15px;
+    color: #fde39b;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+}
+#search:focus {
+    animation: 0.5s width forwards;
+}
+/* עיצוב כפתור המחיקה מהסל */
+.delete {
+    position: relative;
+    right: 10px;
+    font-size: 23px;
+    width: 40px;
+    height: 40px;
+    color: black;
+    border-radius: 50%;
+}
+.delete:hover {
+    background-color: rgba(255, 166, 0, 0.505);
+
+}
+/* עיצוב הדיב להוספת והורדת כמות למוצר בסל */
+.pagination {
+    display: inline-block;
+}
+span {
+    color: black;
+    float: left;
+    font-size: 23px;
+    padding: 4px 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    cursor: cell;
+}
+span:hover {
+    background-color: #ddd;
+}
+* {
+    box-sizing: border-box;
+}
+/* עיצוב עמוד דף התשלום */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+.col-25 {
+    -ms-flex: 25%;
+    flex: 25%;
+}
+.col-50 {
+    -ms-flex: 50%;
+    flex: 50%;
+
+}
+.col-25,
+.col-50 {
+    padding: 0 16px;}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 2px solid lightgrey;
+    border-radius: 3px;
+    width: 60%;
+    margin-right: 200px;
+    margin-left:300px;
+    font-size: 4vh;
+}
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+input[type=text],[type=email], [type=month], [type=number] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: right;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.btn {
+    background-color: #fcb900;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #caa233;
+}
+
+@media only screen and (max-width: 1000px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .col-25 {
+        margin-bottom: 20px;
+    }
+    button{
+        width:4% ;
+        font-size:10px ;
+    }
+    header{
+        margin-left: 10px;
+    }
+    .pages{
+        width:8% ;
+        font-size:10px ; 
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #meels,
+#desert,
+#drink,
+#salads,
+#noGluten,
+#find,
+#pasta {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+  /* עיצוב הסרגל שזז בהתאם לגלילה */
+.progress-container {
+    width: 100%;
+    height: 15px;
+    background: #ccc;
+    position: sticky;
+top:150px;
+  }
+  
+.progress-bar {
+    height: 15px;
+    background: #fcb900;
+    width: 0%;
+  }
+  
+.content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+  }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fadeInAnimation {
+0% {
+  opacity: 0;
+  transform: translateY(20px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+} 
+@keyframes typewriter {
+    from {
+      width: 1%;
+    }
+    to {
+      width: 17%;
+    }
+  }
+@keyframes width {
+    0% {
+        width: 11%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+@keyframes new {
+    5% {
+       color: yellow;
+       /* box-shadow: 0 0 15px orange; */
+
+    }
+
+    25% {
+        color: #fcb900;
+        /* box-shadow: 0 0 15px yellow; */
+
+    }
+
+    45% {
+        color: yellow;
+        /* box-shadow: 0 0 15px rgb(255, 221, 0); */
+    }
+
+    65% {
+        color: rgb(255, 234, 0);
+        /* box-shadow: 0 0 15px rgb(252, 222, 51); */
+
+    }
+
+    85% {
+        color: #fcb900;
+        /* box-shadow: 0 0 15px yellow; */
+    }
+
+    100% {
+        color: yellow;
+        /* box-shadow: 0 0 15px #fcb900; */
+
+    }
+}
+@keyframes alli{
+    2%{
+       scale: 1.2; 
+    }
+    100%{
+scale: 1;
+    }
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-7deg); }
+    20% { transform: translate(-3px, 0px) rotate(7deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(7deg); }
+    50% { transform: translate(-1px, 2px) rotate(-7deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-7deg); }
+    80% { transform: translate(-1px, -1px) rotate(7deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-7deg); }
+  }
+@keyframes zoom {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.05)
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+ 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="./pics/general/headerlogo-mob.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <title>משולשים - חלבי משפחתי | משלוחי פיצה במודיעין, בית שמש וביתר עילית</title>
+</head>
+<body id="body">
+    <header id="header">
+        <img src="./pics/general/headerlogo-mob.png" onclick="displayBanner()" width="160px" height="90px"
+            style="position:absolute;left:0%;margin:20px;" alt="">
+        <nav id="nav">
+            <button style="color:#ffffff;"> כשר למהדרין</button>
+            <button style="color:#fcb900;width: 15%;">1700-55-90-55</button>
+            <input type="text" id="search" placeholder="...חפש מוצר" oninput="search()">
+            <br>
+            <button class="pages" onclick="displayProducts('salads');currentPage('סלט')"> סלטים<i
+                    class='fas fa-pepper-hot'></i></button>
+            <button class="pages" onclick="displayProducts('meels');currentPage('פיצה')">פיצה<i
+                    class='fas fa-pizza-slice'></i></button>
+            <button class="pages" onclick="displayProducts('pasta');currentPage('פסטה')">פסטה<i
+                    class='fas fa-bacon'></i></button>
+            <button class="pages" onclick="displayProducts('drink');currentPage('שתיה')">שתיה<i
+                    class='fas fa-coffee'></i></button>
+            <button class="pages" onclick="displayProducts('desert');currentPage('קינוחים')">קינוחים<i
+                    class='fas fa-ice-cream'></i></button>
+            <button class="pages" onclick="noGluten();currentPage('ללא גלוטן')" style="width:14% ;"><i
+                    class='fas fa-allergies'></i>מוצרים ללא גלוטן</button>
+            <button class="pages" onclick="displayBanner();currentPage('בית')">דף הבית<i
+                    class="fa fa-fw fa-home"></i></button>
+            <button class="pages" style="width:9%" onclick="displayCart();currentPage('סל קניות')">סל קניות<i
+                    class='fas fa-cart-arrow-down'></i></button>
+        </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+      
+    </header>
+    <main id="main">
+        <div id="banner"></div>
+        <div id="salads"></div>
+        <div id="meels"> </div>
+        <div id="pasta"> </div>
+        <div id="drink"> </div>
+        <div id="desert"></div>
+        <div id="cart"></div>
+        <div id="find"></div>
+        <div id="noGluten"></div>
+    <section class="menu">
+        <h2> <i class="fa fa-navicon"></i> בתפריט שלנו</h2>
+        <div class="item">
+            <img src="./pics/pizza/פיצה 28.jpg" alt="">
+            <h3>פיצה</h3>
+            <p>פיצות חמות טעימות</p>
+        </div>
+        <div class="item" >
+        <div class="item" onclick="displayProducts('pasta');currentPage('פסטה')">
+            <img src="./pics/pasta/פסטה 6.jpg" alt="">
+            <h3>פסטות</h3>
+            <p>פסטות במגוון רטבים</p>
+        </div>
+        <div class="item" onclick="displayProducts('desert');currentPage('קינוחים');">
+            <img src="./pics/desert/קינוח-אישי-פרלינה-ומוס-שוקולד-300x225.jpg" alt="">
+            <h3>קינוחים</h3>
+            <p>קינוחים מכל הסוגים</p>
+        </div>
+        <div class="item" onclick="displayProducts('drink');currentPage('שתיה')">
+            <img src="./pics/drink/11265.png" alt="">
+            <h3>שתיה</h3>
+            <p>משקאות קלים</p>
+    </section>
+    <section class="specials">
+        <h2>הלוהטים היום</h2>
+        <div class="special">
+            <h3><i class='fas fa-pizza-slice'></i>פיצה</h3>
+            <p>פיצה משפחתית לבנה עם פטריות</p>
+        </div>
+        <div class="special">
+            <h3><i class='fas fa-pepper-hot'></i>סלטים</h3>
+            <p> סלט בטטה קריספית</p>
+        </div>
+        <div class="special">
+            <h3><i class='fas fa-bacon'></i>פסטות</h3>
+            <p>רביולי גבינה ברוטב רוזה</p>
+        </div>
+        <div class="special">
+            <h3><i class='fas fa-bacon'></i>פסטה</h3>
+            <p>פסטה ארביאטה</p>
+        </div>
+        <div class="special">
+            <h3><i class='fas fa-pizza-slice'></i>פיצה</h3>
+            <p>פיצה בטטה ועגבניות</p>
+        </div>
+        <br>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="site-info">
+            <h2>משולשים</h2>
+            <p>משולשים - חלבי משפחתי | משלוחי פיצה במודיעין, בית שמש וביתר עילית
+            </p>
+          </div>
+          <div class="contact-info">
+            <h3>צרו קשר</h3>
+            <p><i class="fas fa-map-marker-alt"></i> מודיעין,בית שמש,ביתר עילית</p>
+            <p><i class="fas fa-phone"></i> 1700-55-90-55</p>
+            <p><i class="fas fa-envelope"></i> info@meshulashim.com</p>
+          </div>
+        </div>
+        
+        <p class="footer-text">© 2023 Meshulashim. All rights reserved.</p>
+      </footer>
+</body>
+<script src="./js.js"></script>
+</html>
+
+
