@@ -1,28 +1,24 @@
- ## 🍕 משולשים - אתר לממכר מזון מהיר
+[Read this in Hebrew](README_HE.md)
+# 🍕 Meshulashim - Fast Food Website
 
-ברוכים הבאים לפרויקט **משולשים**! זהו אתר מגניב ומעוצב לממכר פיצות, משולשים ומאכלים מהירים נוספים. האתר נבנה באמצעות JavaScript, HTML, CSS ובוטסטראפ, ומציע למשתמשים חוויית גלישה חלקה וידידותית עם אפשרויות מתקדמות.
+Welcome to the **Meshulashim** project! This is a cool and stylish website for selling pizzas, slices, and other fast-food items. The website is built using JavaScript, HTML, CSS, and Bootstrap, providing users with a smooth and friendly browsing experience with advanced options.
 
-## 📸 תצוגה מקדימה
+## 📸 Preview
 ![image](https://github.com/user-attachments/assets/8e03c531-b7bf-417e-87bd-64ccaf784cd4)
 
-## ✨ תכונות עיקריות
-- **הוספה לסל**: כל אחד מהמוצרים באתר ניתן להוספה לסל הקניות בלחיצה פשוטה.
-- **סינון מוצרים**: אפשרות לסנן מוצרים לפי מוצרים ללא גלוטן, כך שלקוחות יכולים למצוא בקלות מוצרים שמתאימים להם.
-- **עיצוב רספונסיבי**: האתר מעוצב בעזרת בוטסטראפ וידידותי לכל סוגי המכשירים.
+## ✨ Key Features
+- **Add to Cart**: Each product on the site can be added to the cart with a simple click.
+- **Product Filtering**: Filter products by gluten-free items, allowing customers to easily find suitable products.
+- **Responsive Design**: Designed with Bootstrap, ensuring compatibility with all types of devices.
 
-## 🛠️ טכנולוגיות
-- **JavaScript**: לוגיקה דינמית לאינטראקציות באתר.
-- **HTML & CSS**: מבנה וסגנון עיצובי של האתר.
-- **Bootstrap**: עיצוב רספונסיבי מתקדם ואסתטי.
+## 🛠️ Technologies
+- **JavaScript**: Dynamic logic for website interactions.
+- **HTML & CSS**: Structure and visual styling of the website.
+- **Bootstrap**: Advanced responsive and aesthetic design.
 
-## 🚀 איך להריץ את הפרויקט מקומית
-1. שיבו את הפרויקט למחשב:
+## 🚀 How to Run the Project Locally
+1. Clone the repository:
    ```bash
    git clone https://github.com/SariCohen2/meshulashim.git
    ```
-2. פתחו את קובץ `home.html` בדפדפן.
-
----
-
-[English version](README.md)
-```
+2. Open the `home.html` file in your browser.
