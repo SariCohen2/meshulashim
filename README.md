@@ -1,4 +1,4 @@
-[Read this in Hebrew](README_HE.md)
+[Read this in Hebrew](README-HE.md)
 # 🍕 Meshulashim - Fast Food Website
 
 Welcome to the **Meshulashim** project! This is a cool and stylish website for selling pizzas, slices, and other fast-food items. The website is built using JavaScript, HTML, CSS, and Bootstrap, providing users with a smooth and friendly browsing experience with advanced options.
