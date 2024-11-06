@@ -19,7 +19,7 @@
 ## 🚀 איך להריץ את הפרויקט מקומית
 1. שיבו את הפרויקט למחשב:
    ```bash
-   git clone https://github.com/username/projectname.git
+   git clone https://github.com/SariCohen2/meshulashim.git
    ```
 2. פתחו את קובץ `home.html` בדפדפן.
 
